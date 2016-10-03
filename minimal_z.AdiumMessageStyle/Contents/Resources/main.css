@@ -1,0 +1,118 @@
+/*
+---------------------------------------------------------------------------
+  PROJECT: 	Adium Message Style
+
+FILE NAME: 	adium_minimal_z.AdiumMessageStyle
+
+	 NAME: 	adium_minimal_z
+				[https://github.com/zoreet/adium_minimal_z]
+
+ DESIGNER: 	Zoreet [ zoreet.com ]
+
+  CREATED: 	2016.10.03 [first local version]
+
+ BASED ON: 	Minimal Mod Message Style by John Muhl [http://caenim.com/]
+ 			Minimal Adium Message Style [default package 0.8 b12 version]
+				check http://xtras.adium.im/index.php?a=xtras&xtra_id=1576 for full credits
+---------------------------------------------------------------------------
+*/
+
+body,
+.x-container {
+	font-size: 15px;
+	font-family: 'Source Code Pro', monospace !important;
+	color: #2c2d30;
+}
+
+body {
+	padding: 20px;
+	margin: 0;
+}
+
+
+.x-container {
+	position: relative;
+	padding: 10px 10px 10px 56px;
+	display: block;
+}
+
+.x-container[class*="ing.bot"],
+.x-container[class*="Monitoring Bot"],
+.x-container[class*="ing.bot"] .x-sender,
+.x-container[class*="Monitoring Bot"] .x-sender {
+	color: rgba(0,0,0,.4);
+}
+.x-container[class*="ing.bot"] .x-buddyicon,
+.x-container[class*="Monitoring Bot"] .x-buddyicon {
+	background-color: #dedede !important;
+	color: #212121;
+}
+.x-container .x-buddyicon {
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	height: 36px;
+	left: 10px;
+	letter-spacing: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 13px;
+	text-transform: capitalize;
+	top: 13px;
+	width: 36px;
+}
+.x-container.outgoing .x-buddyicon {
+	background-color: #00BFA5 !important;
+}
+.x-container.outgoing .x-sender {
+	color: #00BFA5 !important;
+}
+
+.x-sender {
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 5px;
+	color: #212121;
+	margin-bottom: 2px;
+}
+
+
+.x-time {
+	display: inline-block;
+	color: #9E9E9E;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.x-container a {
+	color: #2196F3;
+}
+
+.x-container.consecutive {
+	padding-top: 0;
+}
+
+.x-container.consecutive .x-buddyicon,
+.x-container.consecutive .x-sender,
+.x-container.consecutive .x-time {
+	display: none;
+}
+
+
+.x-container.mention,
+.x-container.mention .x-sender {
+	background-color: #FFF9C4;
+	color: #212121 !important;
+}
+.x-container.focus {
+	border-left: 4px solid #BBDEFB;
+}
+.x-container.event {
+	background-color: #f2f2f2;
+	color: #9E9E9E;
+}
+.x-container.event .x-sender,
+.x-container.event .x-buddyicon {
+	display: none;
+}
